@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true"
+        android:paddingTop="23dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/data_center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_head_text_size" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:background="#1A72DF"-->
+    <!--android:gravity="center">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/shape_no_circle"-->
+    <!--android:padding="@dimen/marginleft">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@mipmap/left" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/activity_vertical_margin"-->
+    <!--android:layout_marginRight="@dimen/activity_vertical_margin"-->
+    <!--android:gravity="center"-->
+    <!--android:text="3月1日 至 3月31日" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@mipmap/right" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/white">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="@dimen/common_padding"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="名次"-->
+    <!--android:textSize="@dimen/item_size" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="@dimen/common_padding"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="姓名"-->
+    <!--android:textSize="@dimen/item_size" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="@dimen/common_padding"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="报修"-->
+    <!--android:textSize="@dimen/item_size" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="@dimen/common_padding"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="巡检"-->
+    <!--android:textSize="@dimen/item_size" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_margin="@dimen/common_padding"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="出勤率"-->
+    <!--android:textSize="@dimen/item_size" />-->
+    <!--</LinearLayout>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_empty"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textSize="20sp"-->
+    <!--android:text="@string/no_data"/>-->
+    <!--<ListView-->
+    <!--android:id="@+id/lv_data_center"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@null"-->
+    <!--android:scrollbars="none" />-->
+
+    <!--</FrameLayout>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/mPieChart_check"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/green" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/mPieChart_maintain"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:background="@color/text_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:background="@color/yellow">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/common_padding"
+                    android:descendantFocusability="blocksDescendants" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

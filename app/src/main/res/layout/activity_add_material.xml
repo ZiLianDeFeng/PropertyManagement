@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_margin="@dimen/common_padding">
+
+        <TextView
+            style="@style/CommonTextview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/material_name" />
+
+        <EditText
+            android:id="@+id/et_materialName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:padding="@dimen/common_dp"
+            android:textSize="@dimen/common_text_size"
+            android:background="@drawable/shape_circle" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_weight="1"
+            android:background="@drawable/shape_circle_state"
+            android:text="查询"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <me.maxwin.view.XListView
+        android:id="@+id/lv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:padding="5dp"
+    android:gravity="center"
+    android:id="@+id/sort_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="按报修单号排序"
+    android:textSize="@dimen/common_text_size" />
+
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/sort_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按报修类型排序"
+        android:textSize="@dimen/common_text_size" />
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/sort_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按登记时间排序"
+        android:textSize="@dimen/common_text_size" />
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/sort_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按状态排序"
+        android:textSize="@dimen/common_text_size" />
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/LargeItem"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:text="@string/check_result" />
+
+            <LinearLayout
+                android:id="@+id/ll_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding">
+
+                <TextView
+                    style="@style/CommonTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginleft"
+                    android:gravity="center_vertical"
+                    android:text="巡检结果："
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    style="@style/CommonTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginleft"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="#2000"-->
+            <!--android:layout_height="1dp"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_padding">
+
+                <TextView
+                    style="@style/CommonTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginleft"
+                    android:gravity="center_vertical"
+                    android:text="完工日期："
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_finish_time"
+                    style="@style/CommonTextview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/marginleft"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_param_type"
+                    style="@style/LargeItem"
+                    android:paddingLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="参数详情" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/common_margin_top"
+                    android:src="@mipmap/right" />
+            </LinearLayout>
+
+            <com.it.hgad.logisticsmanager.view.NoScrollListView
+                android:id="@+id/lv_parameter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/ll_result_describ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/LargeItem"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="16dp"
+                    android:background="@color/white"
+                    android:text="结果说明" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/common_margin_top"
+                    android:src="@mipmap/right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_dp"
+                android:layout_marginRight="@dimen/common_dp"
+                android:layout_marginTop="@dimen/common_dp"
+                android:background="@drawable/shape_circle"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="5"
+                android:paddingBottom="@dimen/common_dp"
+                android:paddingLeft="@dimen/common_padding"
+                android:paddingRight="@dimen/common_dp"
+                android:paddingTop="@dimen/common_dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:background="@color/blue"
+        android:padding="@dimen/common_min_padding">
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_cancel"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/shape_botton_button"-->
+        <!--android:text="取消" />-->
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="已处理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+</LinearLayout>

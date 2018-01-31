@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/marginleft"
+            android:paddingLeft="@dimen/marginleft"
+            android:paddingRight="@dimen/marginleft">
+
+            <ImageView
+                android:id="@+id/iv_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/marginleft"
+                android:layout_marginRight="@dimen/marginleft"
+                android:src="@mipmap/odd_numbers" />
+
+            <LinearLayout
+                android:id="@+id/ll_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_order"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/order_number"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/item_size" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="20161222132724"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/item_size" />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginleft"
+                    android:background="@drawable/shape_circle_state"
+                    android:gravity="center_vertical"
+                    android:padding="2dp"
+                    android:text="待维修"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_number"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_order"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    style="@style/ItemView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报修电话：" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="15071481976"
+                    android:textSize="@dimen/item_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_phone"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/iv_order"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    style="@style/ItemView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="报修地址：" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新大楼住院部负1楼供应室二单元15楼"
+                    android:textSize="@dimen/item_size" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/iv_operation"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/operation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_top"
+        android:gravity="center"
+        android:padding="@dimen/common_dp">
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="登记时间："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="2016-12-22 13:27"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:src="@mipmap/andin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="登记人员："
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="张杰"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

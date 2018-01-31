@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_light"
+            android:gravity="top"
+            android:hint="维修反馈"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:padding="@dimen/common_dp"
+            android:textSize="@dimen/common_text_size" />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:background="@drawable/btn_selector"
+            android:text="确定"
+            android:textColor="@color/text_color_selector"
+            android:textSize="@dimen/item_size" />
+    </LinearLayout>
+</LinearLayout>

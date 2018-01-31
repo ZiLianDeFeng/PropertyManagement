@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1A72DF"
+            android:padding="@dimen/common_padding">
+
+            <TextView
+                android:id="@+id/tv_last"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/back"
+                android:gravity="center"
+                android:text="上月"
+                android:textColor="@color/white"
+                android:textSize="@dimen/item_size" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2017年2月"
+                android:textColor="@color/white"
+                android:textSize="@dimen/item_size" />
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@mipmap/back_right"
+                android:gravity="center"
+                android:text="下月"
+                android:textColor="@color/white"
+                android:textSize="@dimen/item_size" />
+        </RelativeLayout>
+
+        <com.it.hgad.logisticsmanager.view.SignCalendar
+            android:id="@+id/sc_main"
+            android:layout_width="match_parent"
+            android:layout_height="320dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/common_padding"
+                    android:text="签到时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_size" />
+
+                <TextView
+                    android:id="@+id/tv_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#1000" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/common_padding"
+                    android:text="签退时间"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_size" />
+
+                <TextView
+                    android:id="@+id/tv_sign_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_margin="@dimen/common_min_padding"
+                android:layout_weight="1"
+                android:background="@drawable/shape_circle_state"
+                android:text="签到"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:id="@+id/btn_sign_out"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_button_height"
+                android:layout_margin="@dimen/common_min_padding"
+                android:layout_weight="1"
+                android:background="@drawable/shape_circle_button"
+                android:text="签退"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

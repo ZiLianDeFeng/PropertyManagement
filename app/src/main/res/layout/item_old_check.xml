@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_order"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/marginleft"-->
+        <!--android:layout_marginTop="@dimen/marginleft"-->
+        <!--android:src="@mipmap/mechine" />-->
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="100dp"
+        android:paddingLeft="@dimen/common_padding"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common_min_padding">
+
+            <TextView
+                android:id="@+id/tv_device_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/common_dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/common_dp"
+                android:text="设备二"
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/check_number"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="20161222132724"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_check_man"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/common_dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="@dimen/common_padding">-->
+
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="@string/check_man"-->
+                <!--android:textSize="@dimen/common_text_size" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_check_man"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:textSize="@dimen/common_text_size" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/common_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/plan_time"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@+id/tv_plan_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_circle_state"
+        android:gravity="center"
+        android:padding="@dimen/common_min_padding"
+        android:text="@string/copy_list"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size" />
+</LinearLayout>

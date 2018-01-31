@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2000"/>
+    <TextView
+        android:layout_marginTop="@dimen/common_min_padding"
+        android:layout_marginBottom="@dimen/common_min_padding"
+        android:id="@+id/sort_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding"
+        android:text="@string/state_all"
+        android:textSize="@dimen/common_text_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2000"/>
+    <TextView
+        android:layout_marginTop="@dimen/common_min_padding"
+        android:layout_marginBottom="@dimen/common_min_padding"
+        android:id="@+id/sort_need"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding"
+        android:text="@string/should_check"
+        android:textSize="@dimen/common_text_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2000"/>
+    <TextView
+        android:layout_marginTop="@dimen/common_min_padding"
+        android:layout_marginBottom="@dimen/common_min_padding"
+        android:id="@+id/sort_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding"
+        android:text="@string/check_done"
+        android:textSize="@dimen/common_text_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2000"/>
+    <TextView
+        android:layout_marginTop="@dimen/common_min_padding"
+        android:layout_marginBottom="@dimen/common_min_padding"
+        android:id="@+id/sort_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding"
+        android:text="@string/check_over"
+        android:textSize="@dimen/common_text_size" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#2000"/>
+    <TextView
+        android:layout_marginTop="@dimen/common_min_padding"
+        android:layout_marginBottom="@dimen/common_min_padding"
+        android:id="@+id/sort_over_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding"
+        android:text="@string/over_finish"
+        android:textSize="@dimen/common_text_size" />
+</LinearLayout>

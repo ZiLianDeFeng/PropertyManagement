@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="ButtonMenu">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_buttom_rb_text_selector</item>
+    </style>
+
+    <style name="Maintenance">
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/maintenance_radiobutton</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/item_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_buttom_rb_text_selector</item>
+
+    </style>
+
+    <style name="CommonTextview">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/common_dp</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ItemView">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/item_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="chooese">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_circle</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="PopupWindowAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+
+    </style>
+
+    <style name="OrderDetail">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:paddingLeft">@dimen/common_padding</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="OrderDetailText">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/common_text_size</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="LargeItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:background">@color/background_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="EditView">
+        <item name="android:width">50dp</item>
+    </style>
+
+
+    <style name="EditDialog">
+        <!--<item name="android:windowAnimationStyle">@style/DialogAnim</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="table_text">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/common_padding</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/item_selector</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="OrderRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/item_size</item>
+        <item name="android:drawableBottom">@drawable/line_selector</item>
+        <item name="android:textColor">@color/main_buttom_rb_text_selector</item>
+
+    </style>
+
+    <style name="performanceRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/item_size</item>
+        <item name="android:background">@drawable/blue_radiobutton_selector</item>
+        <item name="android:textColor">@color/blue_text_color_selector</item>
+    </style>
+
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+</resources>

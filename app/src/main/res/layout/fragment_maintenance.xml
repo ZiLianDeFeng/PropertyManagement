@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/blue"
+            android:fitsSystemWindows="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/maintenance_manage"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_head_text_size" />
+
+            <LinearLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/search" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_no_net"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/no_net"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_dp"
+                android:textSize="@dimen/item_size"
+                android:textColor="@color/white"
+                android:text="当前网络不给力"/>
+        </RelativeLayout>
+
+        <com.viewpagerindicator.TabPageIndicator
+            android:id="@+id/maintence_tpi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/maintence_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_light" />
+
+    </LinearLayout>
+
+</LinearLayout>

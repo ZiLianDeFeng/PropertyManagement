@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/blue"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:padding="20dp"
+            android:scaleType="center"
+            android:src="@mipmap/back" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+
+            <RadioGroup
+                android:id="@+id/rg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/common_min_padding"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:paddingRight="@dimen/common_padding"
+                    android:paddingTop="@dimen/common_min_padding"
+                    android:text="文章"
+                    android:textColor="@color/text_radiobutton_selector" />
+
+                <RadioButton
+                    android:id="@+id/rb_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/common_min_padding"
+                    android:paddingLeft="@dimen/common_padding"
+                    android:paddingRight="@dimen/common_padding"
+                    android:paddingTop="@dimen/common_min_padding"
+                    android:text="视频"
+                    android:textColor="@color/text_radiobutton_selector" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_net"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/no_net"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_dp"
+            android:text="当前网络不给力"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

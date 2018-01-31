@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/header"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/LargeItem"
+                android:text="@string/information"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/from" />
+
+                <TextView
+                    android:id="@+id/tv_from"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="电话报修" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="88888888" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/department" />
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="供应室" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="新大楼住院部负1楼供应室" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/regist" />
+
+                <TextView
+                    android:id="@+id/tv_regist"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="Admin" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/content" />
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="的好方法或或或或" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/type" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="更换" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/reportman" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="说得对" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/OrderDetailText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25sp"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-12-27 14:39" />
+            </RelativeLayout>
+
+            <TextView
+
+                style="@style/LargeItem"
+                android:text="@string/maintenance_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hang_time" />
+
+                <TextView
+                    android:id="@+id/tv_hang_time"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="2016-12-27 14:39" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reason" />
+
+                <TextView
+                    android:id="@+id/tv_reason"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="只是很想挂起只是很想挂起只是很想挂起只是很想挂起只是很想挂起只是很想挂起" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/main_people" />
+
+                <TextView
+                    android:id="@+id/tv_main_people"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="张杰" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/finish_time" />
+
+                <TextView
+                    android:id="@+id/tv_finish_time"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="2016-12-27 14:39" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/feedback" />
+
+                <TextView
+                    android:id="@+id/tv_feedback"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="不是很想反馈不是很想反馈不是很想反馈不是很想反馈不是很想反馈" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_not_same"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:background="#fff"
+                android:paddingLeft="@dimen/marginleft"
+                android:paddingRight="@dimen/marginleft">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no_same" />
+
+                <TextView
+                    android:id="@+id/tv_not_same"
+                    style="@style/OrderDetailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="不是很想反馈不是很想反馈不是很想反馈不是很想反馈不是很想反馈" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LargeItem"
+                android:layout_marginTop="@dimen/common_min_padding"
+                android:text="@string/material" />
+
+            <com.it.hgad.logisticsmanager.view.NoScrollListView
+                android:id="@+id/lv_material"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.it.hgad.logisticsmanager.view.NoScrollListView>
+
+            <TextView
+                style="@style/LargeItem"
+                android:layout_marginTop="@dimen/common_margin_top"
+                android:text="@string/picture" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pic_before" />
+
+                <com.it.hgad.logisticsmanager.view.NoScrollGridView
+                    android:id="@+id/gl_maintenance_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_circle" />
+
+                <TextView
+                    style="@style/OrderDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pic_after" />
+
+                <com.it.hgad.logisticsmanager.view.NoScrollGridView
+                    android:id="@+id/gl_maintenance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/shape_circle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

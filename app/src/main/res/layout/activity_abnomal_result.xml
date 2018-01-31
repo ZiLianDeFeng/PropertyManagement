@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginleft"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="32dp"
+            android:padding="@dimen/common_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginleft"
+                android:src="@mipmap/complete" />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="维修申报成功"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_head_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="42dp"
+            android:padding="@dimen/common_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_min_padding"
+                android:drawableLeft="@drawable/shape_oval_black"
+                android:text="    维修申报已成功反馈" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_min_padding"
+                android:drawableLeft="@drawable/shape_oval_black"
+                android:text="    请做好维修处理准备，安排好时间" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_min_padding"
+                android:drawableLeft="@drawable/shape_oval_black"
+                android:text="    准备工作完成后，请再次进行维修" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:layout_margin="@dimen/common_margin_top"
+        android:background="@drawable/btn_selector"
+        android:text="返回"
+        android:textColor="@color/text_color_selector"
+        android:textSize="@dimen/item_size" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_dp"
+        android:background="@drawable/shape_circle"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginleft">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2017-3-27"
+                android:textColor="@color/blue"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/marginleft">
+
+            <TextView
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前水表值：" />
+
+            <TextView
+                android:id="@+id/tv_water"
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_water_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="抄表"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/item_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginleft">
+
+            <TextView
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前电表值：" />
+
+            <TextView
+                android:id="@+id/tv_electric"
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_electric_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="抄表"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/item_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/marginleft">
+
+            <TextView
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前气表值：" />
+
+            <TextView
+                android:id="@+id/tv_gas"
+                style="@style/ItemView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tv_gas_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="抄表"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/item_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_margin="@dimen/common_dp"
+        android:background="@drawable/btn_selector"
+        android:text="提交"
+        android:textColor="@color/text_color_selector"
+        android:textSize="@dimen/item_size" />
+
+</LinearLayout>

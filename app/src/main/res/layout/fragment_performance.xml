@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/blue"
+        android:fitsSystemWindows="true"
+        android:paddingTop="25dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <RadioGroup
+                android:id="@+id/rg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_bg_white"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/common_min_padding"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="@dimen/common_min_padding"
+                    android:text="维修"
+                    android:textColor="@color/text_radiobutton_selector"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RadioButton
+                    android:id="@+id/rb_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/radiobutton_selector"
+                    android:button="@null"
+                    android:paddingBottom="@dimen/common_min_padding"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="@dimen/common_min_padding"
+                    android:text="巡检"
+                    android:textColor="@color/text_radiobutton_selector"
+                    android:textSize="@dimen/common_text_size" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/common_padding">
+
+        <RadioGroup
+            android:id="@+id/rg_performance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_padding"
+            android:layout_marginRight="@dimen/common_padding"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_day"
+                style="@style/performanceRadioButton"
+                android:text="日"
+                android:textSize="@dimen/common_text_size" />
+
+            <RadioButton
+                android:id="@+id/rb_month"
+                style="@style/performanceRadioButton"
+                android:text="月"
+                android:textSize="@dimen/common_text_size" />
+
+            <RadioButton
+                android:id="@+id/rb_total"
+                style="@style/performanceRadioButton"
+                android:text="总"
+                android:textSize="@dimen/common_text_size" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/common_dp"
+        android:text="统计"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_head_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/mHorizontalBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+</LinearLayout>

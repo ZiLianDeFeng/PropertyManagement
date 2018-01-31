@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/common_dp">
+
+    <LinearLayout
+        android:id="@+id/ll_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_param"
+            style="@style/CommonTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginleft"
+            android:layout_weight="3.6"
+            android:gravity="center_vertical"
+            android:text="1：空调负荷"
+            android:textSize="@dimen/common_text_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tv_state"
+                style="@style/CommonTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginleft"
+                android:gravity="center_vertical"
+                android:text="正常"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_acture"
+            style="@style/CommonTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginleft"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_range"-->
+    <!--style="@style/CommonTextview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/marginleft"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="参考范围：2~8匹"-->
+    <!--android:textSize="@dimen/common_text_size" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_reality"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--style="@style/CommonTextview"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="@dimen/marginleft"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="实际值："-->
+    <!--android:textSize="@dimen/common_text_size" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_reality"-->
+    <!--style="@style/CommonTextview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="@dimen/common_dp"-->
+    <!--android:textSize="@dimen/common_text_size" />-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+</LinearLayout>
